@@ -1,0 +1,49 @@
+<mat-sidenav-container>
+  <mat-sidenav mode="side" opened class="card">
+    <div>
+      <img class="avatar" src="assets/LogoBJI_DOC.png" />
+      <button
+        mat-button
+        class="menu-button"
+        routerLink="/chart"
+        [routerLinkActive]="['seleted-menu']"
+      >
+        <mat-icon>apps</mat-icon>
+        <!-- dashboard  apps-->
+        <span>Tableau de bord</span>
+      </button>
+      <button
+        mat-button
+        class="menu-button"
+        routerLink="/courier"
+        [routerLinkActive]="['seleted-menu']"
+      >
+        <mat-icon>email</mat-icon>
+        <span>Courriers</span>
+      </button>
+      <button
+        mat-button
+        class="menu-button"
+        [routerLink]="['suivi-tendances']"
+        [routerLinkActive]="['seleted-menu']"
+      >
+        <mat-icon>tune</mat-icon>
+        <span>Suivi des tendances</span>
+      </button>
+
+      <!-- <mat-divider></mat-divider> -->
+
+      <button mat-button class="menu-button" [routerLink]="['contacts']" [routerLinkActive]="['seleted-menu']">
+        <mat-icon>person</mat-icon>
+        <!-- <img src="./assets/ASSETS-ICONS/ICON-USER.svg" alt="" /> -->
+        <span>Contacts</span>
+      </button>
+    </div>
+    <div class="deconn">
+      <button mat-button class="deconnexion">
+        <mat-icon>logout</mat-icon>
+        <span>Se déconnecté</span>
+      </button>
+    </div>
+  </mat-sidenav>
+</mat-sidenav-container>
